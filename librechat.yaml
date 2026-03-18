@@ -1,0 +1,8 @@
+version: 1.1.0
+cache: true
+
+endpoints:
+  openai:
+    apiKey: "${OPENAI_API_KEY}"
+  google:
+    apiKey: "${GOOGLE_KEY}"
