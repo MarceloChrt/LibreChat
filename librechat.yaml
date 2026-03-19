@@ -6,3 +6,13 @@ endpoints:
     apiKey: "${OPENAI_API_KEY}"
   google:
     apiKey: "${GOOGLE_KEY}"
+  custom:
+    - name: "Perplexity"
+      baseURL: "https://api.perplexity.ai/"
+      apiKey: "${PERPLEXITY_API_KEY}"
+      models:
+        default: ["sonar", "sonar-pro", "sonar-reasoning"]
+        fetch: false
+      titleConvo: true
+      titleModel: "sonar"
+      modelDisplayLabel: "Perplexity AI"
