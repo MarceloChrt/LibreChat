@@ -4,32 +4,32 @@ cache: true
 
 endpoints:
   custom:
-    # 🔹 OPENAI
-    - name: "OpenAI"
-      baseURL: "https://api.openai.com/v1"
-      apiKey: "${OPENAI_API_KEY}"
+    - name: OpenAI
+      baseURL: https://api.openai.com/v1
+      apiKey: ${OPENAI_API_KEY}
       models:
-        fetch: true
+        default:
+          - gpt-4o-mini
       titleConvo: true
-      titleModel: "gpt-4o-mini"
-      modelDisplayLabel: "OpenAI"
+      titleModel: gpt-4o-mini
+      modelDisplayLabel: OpenAI
 
-    # 🔹 PERPLEXITY
-    - name: "Perplexity"
-      baseURL: "https://api.perplexity.ai/"
-      apiKey: "${PERPLEXITY_API_KEY}"
+    - name: Perplexity
+      baseURL: https://api.perplexity.ai
+      apiKey: ${PERPLEXITY_API_KEY}
       models:
-        fetch: true
+        default:
+          - sonar
       titleConvo: true
-      titleModel: "sonar"
-      modelDisplayLabel: "Perplexity AI"
+      titleModel: sonar
+      modelDisplayLabel: Perplexity
 
-    # 🔹 GEMINI
-    - name: "Gemini"
-      baseURL: "https://generativelanguage.googleapis.com/v1beta"
-      apiKey: "${GOOGLE_API_KEY}"
+    - name: Gemini
+      baseURL: https://generativelanguage.googleapis.com/v1beta
+      apiKey: ${GOOGLE_API_KEY}
       models:
-        fetch: true
+        default:
+          - gemini-1.5-flash
       titleConvo: true
-      titleModel: "gemini-1.5-flash"
-      modelDisplayLabel: "Gemini"
+      titleModel: gemini-1.5-flash
+      modelDisplayLabel: Gemini
