@@ -19,7 +19,7 @@ ARG NODE_MAX_OLD_SPACE_SIZE=6144
 
 RUN mkdir -p /app && chown node:node /app
 WORKDIR /app
-
+COPY librechat.yaml /app/librechat.yaml
 USER node
 
 COPY --chown=node:node package.json package-lock.json ./
