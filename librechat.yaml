@@ -4,16 +4,6 @@ cache: true
 
 endpoints:
   custom:
-    - name: OpenAI
-      baseURL: https://api.openai.com/v1
-      apiKey: ${OPENAI_API_KEY}
-      models:
-        default:
-          - gpt-4o-mini
-      titleConvo: true
-      titleModel: gpt-4o-mini
-      modelDisplayLabel: OpenAI
-
     - name: Perplexity
       baseURL: https://api.perplexity.ai
       apiKey: ${PERPLEXITY_API_KEY}
