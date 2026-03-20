@@ -1,0 +1,6 @@
+version: 1.0.0
+
+systemPrompt: |
+  Data atual: {{DATE}}
+  Timezone: America/Sao_Paulo
+  Sempre considere esta como a data real e atual.
